@@ -1,0 +1,88 @@
+Henrique Ramos da Silva 123651
+
+  Questão 01 - A respeito das camadas do modelo OSI avalie asafirmações seguintes e corrija a(s) errada(s).
+
+I. A camada de Rede é responsável por transferir os pacotes da origem ao destino,fornecer ligação entre as redes e recuperar erros.
+  R. A primeira parte está correta, mas o resto e de responsabilidade da camada de Enlace, e nela que ocorre a checagem de erros através do (LLC).
+  Por isso esta incorreto.
+
+II. A camada de Enlace de dados é responsável por organizar bits em frames,comprimir os dados e fornecer entrega nó a nó.
+  R. A camada de Enlace e responsável por organizar bits em frames e fornecer entrega nó a nó.
+  Por isso esta incorreto.
+
+III. A camada de Transporte é responsável por prover a entrega confiável de mensagens de processo a processo, criptografar e comprimir os dados.
+  R. A camada de transporte é responsável pela quebra de dados em segmentos e por juntar tudo novamente no destino final. 
+  Por isso esta incorreto.
+
+  Questão 02 - Cite e faça um breve resumo sobre cada camada do modelo OSI e do modelo TCP/IP. Ao final explique a diferença entre osdois modelos.
+
+OSI (Open Systems Interconnection)- E um modelo Conceitual que possue 7 camadas sendo elas:
+  1 Camada Física: Responsável pela transmissão dos dados brutos e conexão por cabos ou sem fio.
+  2 Camada de Enlace de Dados: Responsável pela transmissão dos dados por meio físico, identificação de erros e por definir permissões nos dispositivos
+  3 Camada de Rede: Responsável por transmitir dados entre sistemas finais por meio de uma rede e por encontra o caminho mais curto para a transição dos dados.
+  4 Camada de Transporte: Fornece comunicação de ponta a ponta onde é responsável pela quebra dos dados em seguimentos e pela junção deles no ponto final.
+  5 Camada de Sessão :"Gerencia as sessões de comunicação entre os aplicativos".
+  6 Camada de Apresentação :"Lida com a tradução, compressão e criptografia dos dados".
+  7 Camada de Aplicação :"Fornece interfaces para os aplicativos de rede."
+
+TCP/IP - É o modelo usado no mercado possue 4 camadas sendo elas:
+  1 Camada de Interface de Rede: Cuida da transmissão em camada física, do enquadramento dos dados enfim ele faz tudo que às camadas física e de enlace do OSI fazia.
+  2 Camada de Internet (Internet Layer): Responsável pelo roteamento de pacotes entre as redes iqual à camada de rede do OSI.
+  3 Camada de Transporte (Transport Layer): Responsável pela transmição de dados igual à camada de transporte do OSI.
+  4 Camada de Aplicação (Application Layer):Faz oque as camadas de sessão, apresentação e aplicação do OSI faziam, os serviços de aplicação dos programas de rede.
+
+  Questão 03 - Você foi contratado para fornecer uma consultoria sobretopologias de redes de computadores.
+  a) Forneça pelo menos cinco topologias ao seu cliente.
+I.Barramneto
+II.Estrela
+III.Anel
+IV.Malha
+V.Árvore 
+  b) Após sua resposta ele faz a seguinte pergunta: “Qual dessas topologias será amelhor para minha rede?”. Responda da melhor forma possível a ele.
+Depende de qual será o tamanho da sua rede, seu objetivo para ela e quanto você planeja gastar, mas a mais comum e a topologia de estrela.
+
+  Questão 04 - Avalie as alternativas e corrija a(s) errada(s):
+  I. LAN: é uma rede de computadores que abrange uma área geográfica limitada,como um escritório, um edifício ou um campus. 
+Geralmente, uma LAN é depropriedade e administrada por uma única organização. 
+Ela permite a comunicaçãoe o compartilhamento de recursos entre os dispositivos conectados, comocomputadores, impressoras e servidores, de forma rápida e eficiente.
+  R. Correta
+
+  II. MAN: é uma rede que abrange uma grande área geográfica, como um país, um continente ou até globalmente. 
+Ela interconecta várias LANs e WANs em diferenteslocais, usualmente por meio de conexões de longa distância, 
+como linhas alugadas,circuitos de satélite ou conexões de rede pública. A MAN permite a comunicaçãoentre dispositivos em diferentes locais geográficos, 
+mesmo que estejam distantesum do outro.
+    R. Incorreta. A MAN e uma rede metropolitana que abrange uma cidade e não pode ser usada para se conectar longas distâncias, essa seria a WAN.
+
+  III. WAN: é uma variação de uma LAN que usa tecnologia sem fio para conectardispositivos em uma área geográfica limitada. Ela permite que dispositivos, comolaptops,
+smartphones e tablets, se conectem a uma rede local usando tecnologiascomo Wi-FI. As WANs são comumente encontradas em ambientes domésticos,escritórios 
+e espaços públicos, fornecendo conectividade sem fio conveniente paraos usuários
+  R. Incorreta. A WAN e responsável pela conexão de longas distâncias como cidades ou países.
+
+  Questão 05 - Diferencie IPv4 do IPv6 e explique o motivo do surgimentodo mais recente entre eles
+
+  R. o IPv6 foi desenvolvido para substituir o IPv4, pois o IPv4 e composto por apenas 32 bits, isso causou uma escassez de ips, mas já o IPv6 e composto de 128 bits 
+que são basicamente ips infinitos próximos de 340 undecilhões.
+
+  Questão 06 - Você foi até a casa do seu primo mais novo e ele te pediuajuda por não estar conseguindo conectar o celular na internet.
+Ao acessar as configurações do dispositivo você se depara com a seguintesituação:endereço de ip 192,311,20,256 O que está causando a não conexão do dispositivo?
+Considerando queo ip deva se manter estático, qual sua solução para resolver oproblema?
+  R. O dispositivo não está conectado em uma conexão, pois os endereço de IP só vão de 0 há 255, sendo que o primeiro e o último um host não pode se conectar,
+assim não existe o endereço 256 que ele esta conectado ele só pode conectar até o 254. Reiniciar o molden e o dispositivo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
