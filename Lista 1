@@ -1,4 +1,4 @@
-Henrique Ramos da Silva 123651
+  Henrique Ramos da Silva 123651
 
   Questão 01 - A respeito das camadas do modelo OSI avalie asafirmações seguintes e corrija a(s) errada(s).
 
@@ -64,25 +64,52 @@ e espaços públicos, fornecendo conectividade sem fio conveniente paraos usuár
 que são basicamente ips infinitos próximos de 340 undecilhões.
 
   Questão 06 - Você foi até a casa do seu primo mais novo e ele te pediuajuda por não estar conseguindo conectar o celular na internet.
-Ao acessar as configurações do dispositivo você se depara com a seguintesituação:endereço de ip 192,311,20,256 O que está causando a não conexão do dispositivo?
-Considerando queo ip deva se manter estático, qual sua solução para resolver oproblema?
-  R. O dispositivo não está conectado em uma conexão, pois os endereço de IP só vão de 0 há 255, sendo que o primeiro e o último um host não pode se conectar,
-assim não existe o endereço 256 que ele esta conectado ele só pode conectar até o 254. Reiniciar o molden e o dispositivo.
+Ao acessar as configurações do dispositivo você se depara com a seguintesituação: O que está causando a não conexão do dispositivo?
+Considerando que o ip deva se manter estático, qual sua solução para resolver oproblema?
+  
+  R. O dispositivo não está conectado em uma conexão valida que siga a regra do IPv4 que é até 255, pois os endereço de IP só vão de 0 há 255, sendo que o primeiro 
+e o último um host não pode se conectar, assim não existe o endereço 256 nem 311 que ele esta conectado ele só pode conectar do 0 ao 255 em qualquer um dos pontos por
+Exemplo 255.255.255.254. Reiniciar o moldem e o dispositivo ou se conectar manualmente nas configurações.
+
+  Questão 07 - Considere a seguinte imagem O usuário de um computador recebeu uma instrução para configurar oendereço IP 192.168.100.15/16,
+em notação CIDR. Qual será o corretopreenchimento do Endereço IP e da Máscara de sub-rede?
+ 
+R.Endereço IP: 192.168.100.15
+Máscara de sub-rede: 255.255.0.0
 
 
+Questão 08 - Dado o ip 200.128.164.226. A máscara dessa rede é255.255.255.192.Determine o prefixo da rede IPv4 na qual o host está ligadodemonstrando 
+todos os passos utilizados.
 
+Primeiro transforma a máscara de rede em binário255 e o número máximo quando tudo e 1 então os primeiros 3 pontos são todos 1
+128+64 =192, por isso os dois primeiros números do último ponto é 1.11111111.11111111.11111111.11000000
+Depois conta quantos 1 tem no início dela 26 como o prefixo do IPv4 e definido pela quantidade de bits 1 na máscara e um / o prefixo desse id e de /26
 
+  R.O prefixo da rede e /26
 
+Questão 09 - A respeito do endereçamento IP e considerando a rede 192.168.1.0/28
 
+a) Calcule sua máscara de sub-rede
 
+255,255,255,240 pois 11110000 e iqual a 128+64+32+16=240
 
+  R. Máscara da sub-rede 255.255.255.240
 
+b) Calcule a quantidade de hosts ela suportar
 
+Usa a fórmula 2 elevado ao número reservado para hosts-os dois lugares reservados=2^4-2=14estão te espaço para 14 hosts.
 
+  R. 14 hosts.
 
+c) Informe o endereço de broadcast
 
+  Para encontrar o broadcast e só inverter os bits do host então 28-32=4 ou seja o último ponto que é 0 então todos os bits dele e 0
+00000000 invertendo 00001111 então é só somar 1+2+4+8=15 e então junta com os outros pontos do ip 192.168.1.15
+  R. O endereço de broadcast é 192.168.1.15
 
+Questão 10 - Em uma rede IPv4, um administrador precisa criarsub-redes para acomodar 50 hosts em cada uma. 
+Qual seria a máscarade sub-rede mais apropriada a ser utilizada para atender a essademanda?
 
-
-
-
+  Se e necessário 50 hosts então 2^6-2=62 e 2^5-2=30 então tem que ser 6 bits para caber os 50 então a máscara vai ser32-6=26 então os últimos 6 números são 0
+então ficaria 11111111.11111111.11111111.11000000=255.255.255.192
+  R. Então a máscara de sub-rede mais apropriada seria a 255.255.255.192
